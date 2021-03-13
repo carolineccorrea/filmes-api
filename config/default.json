@@ -1,0 +1,10 @@
+{
+    "App": {
+      "resources": {
+        "MovieClient": {
+          "apiUrl": "http://www.omdbapi.com",
+          "apiToken": "do-not-hard-code"
+        }
+      }
+    }
+  }
