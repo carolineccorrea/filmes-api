@@ -1,10 +1,10 @@
-## Table of contents
+## Índice
 * [General info](#general-info)
 * [Tecnologias](#tecnologias)
 * [Setup](#setup)
 * [Documentação](#documentação)
 
-## General info
+## Informações Gerais
 API REST foi desenvolvida para buscar as informações referente a informações sobre filmes.
 As informações dos filmes serão obtidas pela API: http://www.omdbapi.com/
 
