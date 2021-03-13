@@ -6,7 +6,7 @@
 
 ## General info
 API REST foi desenvolvida para buscar as informações referente a informações sobre filmes.
-As informações dos planetas serão obtidas pela API: http://www.omdbapi.com/
+As informações dos filmes serão obtidas pela API: http://www.omdbapi.com/
 	
 ## 🚀 Technologias
 Project is created with: 
