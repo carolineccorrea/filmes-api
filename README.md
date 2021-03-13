@@ -1,4 +1,11 @@
+## Table of contents
+* [General info](#general-info)
+* [Tecnologias](#tecnologias)
+* [Setup](#setup)
+* [Documentação](#documentação)
 
+## General info
+API REST foi desenvolvida para buscar as informações referente a informações sobre filmes.
 As informações dos planetas serão obtidas pela API: http://www.omdbapi.com/
 	
 ## 🚀 Technologias
