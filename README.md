@@ -1,3 +1,4 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/carolineccorrea/filmes-api)
 ## Table of contents
 * [General info](#general-info)
 * [Tecnologias](#tecnologias)
