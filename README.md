@@ -9,6 +9,9 @@ API REST foi desenvolvida para buscar as informações referente a informações
 As informações dos filmes serão obtidas pela API: http://www.omdbapi.com/
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/carolineccorrea/movies-api)
+![GitHub](https://img.shields.io/github/license/carolineccorrea/movies-api)
+![GitHub language count](https://img.shields.io/github/languages/count/carolineccorrea/movies-api)
+![GitHub top language](https://img.shields.io/github/languages/top/carolineccorrea/movies-api)
 
 ## 🚀 Technologias
 Project is created with: 
