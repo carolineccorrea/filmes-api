@@ -1,4 +1,3 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/carolineccorrea/filmes-api)
 ## Table of contents
 * [General info](#general-info)
 * [Tecnologias](#tecnologias)
@@ -8,7 +7,9 @@
 ## General info
 API REST foi desenvolvida para buscar as informações referente a informações sobre filmes.
 As informações dos filmes serão obtidas pela API: http://www.omdbapi.com/
-	
+
+![GitHub repo size](https://img.shields.io/github/repo-size/carolineccorrea/movies-api)
+
 ## 🚀 Technologias
 Project is created with: 
 * [Nest Framework](https://nestjs.com)
