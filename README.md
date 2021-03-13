@@ -28,7 +28,7 @@ $ localhost:3000/docs
 Para rodar esse projeto, use localmente npm:
 
 ```
-$ git clone https://github.com/carolineccorrea/api-fimes.git
+$ git clone https://github.com/carolineccorrea/api-filmes.git
 $ cd api-filmes
 $ npm install
 $ npm run dev:server
