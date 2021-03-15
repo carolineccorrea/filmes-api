@@ -26,7 +26,6 @@ export class CustomerController {
     }
 
     @Get()
-   // @UseInterceptors(CacheInterceptor)
     async getAll() {
         const customers = await this.customerService.findAll();
         return new ResultDto(null, true, customers, null);
