@@ -8,6 +8,4 @@ import { BackofficeModule } from './modules/backoffice/backoffice.module';
     BackofficeModule,
   ],
 })
-export class AppModule {
-  // constructor(private readonly connection: Connection) {}
-}
+export class AppModule { }

@@ -38,7 +38,6 @@ export class CustomerController {
     }
 
     @Post()
-    //@UseInterceptors(new ValidatorInterceptor(new CreateCustomerContract()))
     async post(@Body() model: CreateCustomerDTO) {
         try {
             const newUser = new User(model.document, model.password, true, ['user'])
