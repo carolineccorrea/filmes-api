@@ -13,7 +13,7 @@ As informações dos filmes serão obtidas pela API: http://www.omdbapi.com/
 ![GitHub language count](https://img.shields.io/github/languages/count/carolineccorrea/movies-api)
 ![GitHub top language](https://img.shields.io/github/languages/top/carolineccorrea/movies-api)
  [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=carolineccorrea_movies-api&metric=security_rating)](https://sonarcloud.io/dashboard?id=carolineccorrea_movies-api)
- [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=carolineccorrea_movies-api)](https://sonarcloud.io/dashboard?id=carolineccorrea_movies-api)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=carolineccorrea_movies-api&metric=alert_status)](https://sonarcloud.io/dashboard?id=carolineccorrea_movies-api)
 
 ## 🚀 Technologias
 Project is created with: 
