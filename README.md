@@ -47,7 +47,7 @@ $ npm run dev:server
 ## Exemplos de uso { GET , POST , PUT , DELETE }
 
 * adicionando um usuário
-http://localhost:3000/v1/documents
+http://localhost:3000/v1/customers
 
 ```
 {
