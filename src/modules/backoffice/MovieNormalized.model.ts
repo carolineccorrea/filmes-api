@@ -1,10 +1,3 @@
-/*
-export interface myType {
-    Source: string;
-    Value: string;
-}
-*/
-/* eslint-disable @typescript-eslint/ban-types */
 export class MovieNormalized {
     Title: string;
     Year: string;
