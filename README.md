@@ -61,7 +61,7 @@ http://localhost:3000/v1/customers
 
 * adicionando um filme
 ```
-http://localhost:3000/v1/:documents/:nomedofilme
+http://localhost:3000/v1/customers/:document/:nomedofilme
 
 ```
 ---
