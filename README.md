@@ -45,14 +45,23 @@ $ npm run dev:server
 ## O servidor inciará na porta:3000 - acesse <http://localhost:3000> 
 
 ## Exemplos de uso { GET , POST , PUT , DELETE }
-http://localhost:3000/v1/documents
 
-* para adicionar um FILME 
+* adicionando um usuário
+http://localhost:3000/v1/documents
 
 ```
 {
-
+  "name": "fulano",
+  "password":"0101010101",
+  "document": "111111111111",
+  "email": "emailexemplo@email.com"
 }
+
+```
+
+* adicionando um filme
+```
+http://localhost:3000/v1/:documents/:nomedofilme
 
 ```
 ---
