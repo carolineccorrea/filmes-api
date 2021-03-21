@@ -30,7 +30,7 @@ export class CustomerController {
         const customers = await this.customerService.findAll();
         return new ResultDto(null, true, customers, null);
     }
-    
+
     @Get(':document')
     async get(@Param('document') document) {
         const customer = await this.customerService.find(document);
@@ -55,12 +55,17 @@ export class CustomerController {
         try {
             const response = await this.customerService.search(nomefilme).toPromise()
             const dados = response.data
-            const movs = new MovieNormalized(dados)
+
+            const newObj = await this.customerService.toLowCase(dados)
+            console.log(typeof newObj)
+            //console.log(typeof movs)
+            const movs = new MovieNormalized(newObj)
+            console.log(movs)
             //validar o document se existe no banco primeiro
             const result = await this.customerService.addMov(document, movs)
             return new ResultDto(null, true, result, null);
         } catch (error) {
-            throw new HttpException(new ResultDto('Não foi possível adicionar seu pet', false, null, error), HttpStatus.BAD_REQUEST);
+            throw new HttpException(new ResultDto('Não foi possível adicionar seu filme', false, null, error), HttpStatus.BAD_REQUEST);
         }
     }
 

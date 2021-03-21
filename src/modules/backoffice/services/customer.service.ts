@@ -28,13 +28,23 @@ export class CustomerService {
         return await this.model.findOne({ document }).exec();
     }
 
-    async validateDoc(document): Promise<boolean> {
-        if(await this.model.findOne({ document })){
-            return true;
-        } else {
-            return false;
+    // async validateDoc(document): Promise<boolean> {
+    //     if(await this.model.findOne({ document })){
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+
+    async toLowCase(dados) {
+        var keysUpper = Object.keys(dados)
+        var newObj = {}
+        for (var i in keysUpper) {
+            newObj[keysUpper[i].toLowerCase()] = dados[keysUpper[i]]
         }
+        return newObj;
     }
+    
     async addMov(document: string, data: MovieNormalized): Promise<ICustomer> {
        const result = await this.find(document)
        if (result){

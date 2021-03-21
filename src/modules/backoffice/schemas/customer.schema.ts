@@ -23,104 +23,104 @@ export const CustomerSchema = new mongoose.Schema({
     },
     movies: [
         {
-            Title: {
+            title: {
                 type: String,
                 required: true
             },
-            Year: {
+            year: {
                 type: String,
                 required: false
             },
-            Rated: {
+            rated: {
                 type: String,
                 required: false
             },
-            Released: {
+            released: {
                 type: String,
                 required: false
             },
-            Runtime: {
+            runtime: {
                 type: String,
                 required: false
             },
-            Genre: {
+            genre: {
                 type: String,
                 required: false
             },
-            Director: {
+            director: {
                 type: String,
                 required: false
             },
-            Writer: {
+            writer: {
                 type: String,
                 required: false
             },
-            Actors: {
+            actors: {
                 type: String,
                 required: false
             },
-            Plot: {
+            plot: {
                 type: String,
                 required: false
             },
-            Language: {
+            language: {
                 type: String,
                 required: false
             },
-            Country: {
+            country: {
                 type: String,
                 required: false
             },
-            Awards: {
+            awards: {
                 type: String,
                 required: false
             },
-            Poster: {
+            poster: {
                 type: String,
                 required: false
             },
-            Ratings: [{
+            ratings: [{
                 Source: String,
                 Value: String,
                 required: false
             }],
-            Metascore: {
+            metascore: {
                 type: String,
                 required: false
             },
-            imdbRating: {
+            imdbrating: {
                 type: String,
                 required: false
             },
-            imdbVotes: {
+            imdbvotes: {
                 type: String,
                 required: false
             },
-            imdbID: {
+            imdbid: {
                 type: String,
                 required: false
             },
-            Type: {
+            type: {
                 type: String,
                 required: false
             },
-            DVD: {
+            dvd: {
                 type: String,
                 required: false
             },
-            BoxOffice: {
+            boxoffice: {
                 type: String,
                 required: false
             },
-            Production: {
+            production: {
                 type: String,
                 required: false
             },
-            Website: {
+            website: {
                 type: String,
                 required: false
             },
-            Response: {
+            response: {
                 type: String,
                 required: false
             },
