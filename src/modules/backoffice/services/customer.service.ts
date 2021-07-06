@@ -28,13 +28,6 @@ export class CustomerService {
         return await this.model.findOne({ document }).exec();
     }
 
-    // async validateDoc(document): Promise<boolean> {
-    //     if(await this.model.findOne({ document })){
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
 
     async toLowCase(dados) {
         var keysUpper = Object.keys(dados)
@@ -42,6 +35,13 @@ export class CustomerService {
         for (var i in keysUpper) {
             newObj[keysUpper[i].toLowerCase()] = dados[keysUpper[i]]
         }
+        return newObj;
+    }
+
+    async treatMovie (nomefilme: string) {
+        const response = await this.search(nomefilme).toPromise();
+        const dados = response.data;
+        const newObj = await this.toLowCase(dados);
         return newObj;
     }
     

@@ -53,17 +53,10 @@ export class CustomerController {
     @Post(":document/:nomefilme")
     async addMov(@Param('document') document, @Param('nomefilme') nomefilme, @Body() model: MovieNormalized) {
         try {
-            const response = await this.customerService.search(nomefilme).toPromise()
-            const dados = response.data
-
-            const newObj = await this.customerService.toLowCase(dados)
-            console.log(typeof newObj)
-            //console.log(typeof movs)
-            const movs = new MovieNormalized(newObj)
-            console.log(movs)
-            //validar o document se existe no banco primeiro
+            const dados = await this.customerService.treatMovie(nomefilme)
+            const movs = new MovieNormalized(dados)
             const result = await this.customerService.addMov(document, movs)
-            return new ResultDto(null, true, result, null);
+            return new ResultDto(null, true, result.movie, null);
         } catch (error) {
             throw new HttpException(new ResultDto('Não foi possível adicionar seu filme', false, null, error), HttpStatus.BAD_REQUEST);
         }
