@@ -33,7 +33,7 @@ export class CustomerController {
 
     @Get(':document')
     async get(@Param('document') document) {
-        const customer = await this.customerService.find(document);
+        const customer = await this.customerService.findCustomer(document);
         return new ResultDto(null, true, customer, null);
     }
 
@@ -56,9 +56,21 @@ export class CustomerController {
             const dados = await this.customerService.treatMovie(nomefilme)
             const movs = new MovieNormalized(dados)
             const result = await this.customerService.addMov(document, movs)
-            return new ResultDto(null, true, result.movie, null);
+            return new ResultDto(null, true, dados, null);
         } catch (error) {
             throw new HttpException(new ResultDto('Não foi possível adicionar seu filme', false, null, error), HttpStatus.BAD_REQUEST);
+        }
+    }
+    
+    //buscar os filmes
+    @Get(":document/:nomefilme")
+    async getMov(@Param('document') document, @Param('nomefilme') nomefilme, @Body() model: MovieNormalized) {
+        try {
+            const result = await this.customerService.getMovie(document,nomefilme)
+            console.log(result)
+            return new ResultDto(null, true, result, null);
+        } catch (error) {
+            throw new HttpException(new ResultDto('Não foi possível buscar seu filme', false, null, error), HttpStatus.BAD_REQUEST);
         }
     }
 
