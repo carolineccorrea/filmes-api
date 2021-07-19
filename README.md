@@ -46,7 +46,7 @@ $ npm run dev:server
 
 ## Exemplos de uso { GET , POST , PUT , DELETE }
 
-* adicionando um usuário
+* adicionando um usuário /POST
 http://localhost:3000/v1/customers
 
 ```
@@ -59,7 +59,14 @@ http://localhost:3000/v1/customers
 
 ```
 
-* adicionando um filme
+* adicionando um filme /POST
+```
+http://localhost:3000/v1/customers/:document/:nomedofilme
+
+```
+---
+
+* buscando um filme /GET
 ```
 http://localhost:3000/v1/customers/:document/:nomedofilme
 
