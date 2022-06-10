@@ -8,7 +8,7 @@
 API REST foi desenvolvida para buscar e adicionar as informações referente a informações sobre filmes.
 As informações dos filmes serão obtidas pela API: http://www.omdbapi.com/
 
-Os dados correpondentes dos filmes e usuarios cadastrados são guardados no banco de dados MONGODB.
+Os dados correspondentes dos filmes e usuarios cadastrados são guardados no banco de dados MONGODB.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/carolineccorrea/movies-api)
 ![GitHub](https://img.shields.io/github/license/carolineccorrea/movies-api)
